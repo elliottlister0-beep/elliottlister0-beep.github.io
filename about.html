@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Calico Aquatics — Aquarium installation, plus pre‑owned tanks and live & decorative coral." />
+  <title>About — Installation & Used Tanks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Leaflet CSS for interactive map on About page -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="logo" href="index.html" aria-label="Home">
+        <img src="images/logo.png" alt="Calico Aquatics logo" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="nav-cart" href="basket.html">Basket</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Calico Aquatics</h1>
+      <p>Calico Aquatics is a small coral and second-hand aquarium equipment shop based in Cumbria. We focus on healthy, well-kept coral and reliable pre-owned tanks and gear at fair prices. Everything we sell is checked, cleaned, and ready to use. Whether you're starting a reef tank or looking for extra equipment, we aim to make the marine hobby simpler and more affordable for everyone.</p>
+    </div>
+  </section>
+
+
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <h2>What We Sell</h2>
+          <ul class="list">
+            <li>Professional aquarium installation (custom and standard sizes)</li>
+            <li>Quality pre‑owned tanks and stands</li>
+            <li>Live & decorative coral (subject to availability)</li>
+            <li>Filtration, lighting, and essential equipment</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Where We’re Based</h2>
+          <p>We’re based in the UK and work with local and regional clients. Use the map to see our service area.</p>
+          <div id="map" class="map" data-lat="54.726105" data-lng="-2.777497" data-zoom="17" data-marker="Calico Aquatics"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Experience</h2>
+        <p>Specialising in aquarium installation and pre‑owned tanks & coral for <span id="years-experience" data-start-year="2018"></span>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Opening Hours</h2>
+        <p>Drop us a line during our opening times below.</p>
+      </div>
+      <ul class="list">
+        <li><strong>Monday:</strong> 10:00 – 17:00</li>
+        <li><strong>Tuesday:</strong> CLOSED</li>
+        <li><strong>Wednesday:</strong> 10:00 – 17:00</li>
+        <li><strong>Thursday:</strong> 10:00 – 17:00</li>
+        <li><strong>Friday:</strong> 10:00 – 17:00</li>
+        <li><strong>Saturday:</strong> 10:00 – 17:00</li>
+        <li><strong>Sunday:</strong> CLOSED</li>
+      </ul>
+      <div id="opening-status" class="opening-status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Values</h2>
+        <p>Principles that guide how we work and partner with clients.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-body">
+            <h3>Integrity</h3>
+            <p>We do the right thing for clients and users, even when it’s hard.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>Excellence</h3>
+            <p>We deliver high-quality work with attention to detail and performance.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>Empathy</h3>
+            <p>We listen first, understand goals, and put people at the center.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Calico Aquatics</h4>
+        <p>Modern solutions for ambitious teams.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: calicoaquatics@gmail.com</li>
+          <li>Phone: +44 07775 691679</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Calico Aquatics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS for interactive map -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
